@@ -17,11 +17,12 @@ class Navbar extends Component
                                 return (
                                     <li key={index}>
                                         <a className={item.cName} href={item.url}>
-                                            <img src={item.icon} alt="" width="40" height="40"></img>
+                                            <img src={item.icon} alt="" width="40" height="40"/> 
+                                            
                                         </a>
                                         <div>{/*Needed another 'a' tag to be able to add the title underneath the image; would be better if I can add these to one hyper link with words at bottom*/}</div>
-                                        <a className="Links" href={item.url}>
-                                            <h5>{item.title}</h5>
+                                        <a  href={item.url}>
+                                            <h5 className="Links">{item.title}</h5>
                                         </a>
                                     </li> 
                                 )

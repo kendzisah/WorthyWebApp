@@ -29,13 +29,13 @@ export const MenuItems =
         title: 'Search',
         url: '#',
         cName: 'nav-links',
-        icon: "../Icons/Search.png"
+        icon: "./Icons/Search.png"
     },
     {
         title: 'About',
         url: '#',
         cName: 'nav-links',
-        icon: '.Icons/About.png'
+        icon: './Icons/About.png'
     }
 ]
 
