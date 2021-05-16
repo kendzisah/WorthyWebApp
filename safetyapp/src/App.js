@@ -1,4 +1,6 @@
 import './App.css';
+import Welcomepage from './components/pages/Welcomepage';
+
 
 
 function App() {
@@ -7,7 +9,8 @@ function App() {
   return (
     <div className="App">
       
-
+      <Welcomepage />
+      
     </div>
   );
 }
