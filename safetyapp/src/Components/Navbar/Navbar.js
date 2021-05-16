@@ -2,6 +2,7 @@ import './Navbar.css';
 import React, { Component } from 'react'
 import { MenuItems } from './MenuItem.js'
 
+
 class Navbar extends Component 
 {        
     render() 
@@ -17,12 +18,9 @@ class Navbar extends Component
                                 return (
                                     <li key={index}>
                                         <a className={item.cName} href={item.url}>
-                                            <img src={item.icon} alt="" width="40" height="40"/> 
                                             
-                                        </a>
-                                        <div>{/*Needed another 'a' tag to be able to add the title underneath the image; would be better if I can add these to one hyper link with words at bottom*/}</div>
-                                        <a  href={item.url}>
-                                            <h5 className="Links">{item.title}</h5>
+                                            <i className={item.icon}></i>
+                                            <p className="Links">{item.title}</p>  
                                         </a>
                                     </li> 
                                 )
@@ -57,6 +55,7 @@ Quick things I picked up
 - apparently would have been better to use for each loop instead of .map but oh well
 - Note we are returning li's to ul tags when we are doing the map function
 - every list item needs key so theyll be able to be accessed
+- this what i used b4 <i className="icon"><FontAwesomeIcon icon={faHouseUser}> </FontAwesomeIcon></i> 
 
 Questions: 
 Q: WHATS A RENDER

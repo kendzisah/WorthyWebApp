@@ -1,4 +1,3 @@
-
 <div>{
 /*
 Quick things I picked up
@@ -23,19 +22,19 @@ export const MenuItems =
         title: 'Home',
         url: '#',  
         cName: 'nav-links',
-        icon: './Icons/Home.png'
+        icon: 'fas fa-house-user Icons'
     },
     {
         title: 'Search',
         url: '#',
         cName: 'nav-links',
-        icon: "./Icons/Search.png"
+        icon: 'fas fa-search Icons'
     },
     {
         title: 'About',
         url: '#',
         cName: 'nav-links',
-        icon: './Icons/About.png'
+        icon: 'far fa-file-alt Icons'
     }
 ]
 
