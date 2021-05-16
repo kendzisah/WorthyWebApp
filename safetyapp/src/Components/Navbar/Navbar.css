@@ -6,36 +6,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     font-size: 1.2rem; 
 
 }
 
+
+.fa-file-alt{
+    /*This how we move it to the right*/
+    margin-left: 0.3rem;
+}
+.Icons{
+    font-size: xx-large;
+    color: rgb(38, 109, 211);
+    padding: 0;
+    
+}
 ul.Items{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    transform: translateY(-100px);
+    margin: 0px;
+    padding: 0px;
+    transform: translateY(-220px);
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
-a:link {
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+    /*this is bringing it to the left for some reason*/
+    margin: 0px;
+    padding: 0px;
   }
-  
-a:visited {
-    text-decoration: none;
-  }
-  
-a:hover {
-    text-decoration: none;
-  }
-  
-a:active {
-    text-decoration: none;
-  }
+
 
 .Links{
+    
     color: white;
+    font-size: small;
 }
+
 
