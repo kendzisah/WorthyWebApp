@@ -1,0 +1,36 @@
+.NavbarItems{
+    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+    /*Width and height are set like this to simulate vertical navbar; might change this to see if we can just rotate the container*/
+    width: 100px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; 
+
+}
+
+ul.Items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: none;
+  }
+  
+a:active {
+    text-decoration: none;
+  }
+
+
