@@ -21,7 +21,9 @@ function CrimePage() {
         .then(data => {
            setStateArrest(data);
        })
-        .catch();
+        .catch((err) => {
+            console.log(err);
+        });
 
 
    }, [stateAbbr]);
