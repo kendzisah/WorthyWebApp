@@ -7,7 +7,8 @@ function Welcomepage() {
     return (
         <div className="container-1">
             <div className="header-logo">
-                <i class="fas fa-peace"> SAFETY APP</i>
+                <i class="fas fa-peace spin"></i>
+                <span className="logo-text"> SAFETY APP</span>
             </div>
 
             <section className="statement left" >
