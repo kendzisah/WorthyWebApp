@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #EFF2F1;
+}
+
+.containter-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Header Styling */
+.header-logo{
+    color: #266DD3;
+    font-size: 5rem;
+    text-align: center;
+    background-color: #EFF2F1;
+    padding-top: 1rem;
+    
+}
+
+.logo-text {
+    font-family: 'Righteous', cursive;
+}
+
+
+.spin{
+
+    font-size: 7rem;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.statement{
+    width: 20%;
+    
+    
+}
+
+.statement > h3{
+    border-bottom: 1px black solid;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.statement > p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.left {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.right {
+    position: absolute;
+    right: 15%;
+    bottom: 55%;
+}
+
+.skyline-img {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+
+/* Button Styles  */
+.start-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+    background-color: #266DD3 !important;
+    font-family: 'Roboto', sans-serif;
+}

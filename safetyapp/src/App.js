@@ -1,10 +1,18 @@
 import './App.css';   
 import Navbar from './Components/Navbar/Navbar.js';  
+import Welcomepage from './components/pages/Welcomepage';
+
+
 
 function App() {
+
+
   return (
     <div className="App">
       <Navbar/>
+      
+      <Welcomepage />
+      
     </div>
   );
 }
