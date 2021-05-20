@@ -9,8 +9,7 @@ class Navbar extends Component
     {
         return  (            
             <nav className="NavbarItems">
-                <div>{/*Populating navbar*/}</div>
-                <ul class="Items">
+                <ul className="Items">
                     {   
                         MenuItems.map
                         (
@@ -18,9 +17,8 @@ class Navbar extends Component
                                 return (
                                     <li key={index}>
                                         <a className={item.cName} href={item.url}>
-                                            
                                             <i className={item.icon}></i>
-                                            <p className="Links">{item.title}</p>  
+                                            <p>{item.title}</p>  
                                         </a>
                                     </li> 
                                 )
