@@ -2,8 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar.js';  
 import CrimePage from './Components/pages/CrimePage';
 import Welcomepage from './Components/pages/welcomepage.js';
-
-
+import Footer from './Components/footer/footer.js';  
 
 function App() {
 
@@ -13,6 +12,7 @@ function App() {
        <Navbar/>
         <CrimePage />
     </div>
+
   );
 }
 
