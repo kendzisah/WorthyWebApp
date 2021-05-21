@@ -1,36 +1,62 @@
 import './CrimePage.css';
-import CrimeData from '../data/CrimeData';
+//import CrimeData from '../data/CrimeData';
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import useGeocoding from '../hooks/useGeocoding';
+import useFetch from '../hooks/useFetch';
+import { Button } from 'reactstrap';
 
 
 function CrimePage() {
-    const [stateAbbr, setStateAbbr] = useState(null);
-    const [timePeriod, setTimePeriod] = useState({
-        until: null,
-        since: null
-    });
-    const [stateArson, setStateArson] = useState(null);
-    const [stateArrest, setStateArrest] = useState(null);
+    
+    const [location, setLocation] = useState("Arizona");
 
-    useEffect(() => {
-        fetch(`/IYTSZ6B2pdcXLEs9cgigPdN8KuYrPPzh6GWQ97aE/data/arrest/states/offense/${stateAbbr}/${variable}/${timePeriod.since}/${timePeriod.until}`)
-        .then(res => {
-           return res.json(); /*This will return a promise with the json value from the api, .json() is asynchronous.*/
-        })
-        .then(data => {
-           setStateArrest(data);
-       })
-        .catch((err) => {
-            console.log(err);
-        });
+    const mapboxAPIKey = "pk.eyJ1Ijoia2VuZHppc2FoIiwiYSI6ImNrb3lyYmZ2YzBvaWMyeHIxYzFibDU1aWEifQ.qHMjuWH9I8PaVQVL0uDPjA";
 
-
-   }, [stateAbbr]);
+    const {
+        data,
+        isPending,
+        error
+    } = useFetch('https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json') || {};
+   
+    const {
+        longitude,
+        latitude
+    } = useGeocoding(location, mapboxAPIKey) || {};
 
     return (
-        <div>
-            {stateAbbr && <CrimeData  /> }
+        <div className="crime-page">
+            {error && <div className="err-msg"> { error } </div> }
+            
+            
+            <div className="sub-header">
+                <i className="fas fa-peace spin"></i>
+                <span className="logo-text"> SAFETY APP</span>
+            </div>
+
+
+            {isPending && <div className="loading-page">Loading... </div> } 
+            
+            { !isPending && 
+            
+                <form className="form-inline">
+                    <label for="address">Street Address (optional): </label><br/>
+                    <input type="type" id="adress" name="address" />
+                    <label for="city">City: *</label><br/>
+                    <input type="type" id="city" name="city" required/>
+                    <label for="state">State: </label><br/>
+                    <select id="state" name="state" placeholder="Select State" onChange={ (e) => setLocation(e.target.value)} required>
+                        {
+                            data.map((states) => (
+                                 <option value={ states.name } key={states.abbreviation}> { states.name } </option>
+        
+                            ))
+                        }
+                    </select>
+                    <Button outline color="secondary" onClick={console.log(data.name)} className="search-btn"><i className="fas fa-search"></i></Button>
+                </form>
+            }
+            
         </div>
     )
 }

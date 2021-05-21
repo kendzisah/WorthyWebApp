@@ -1,6 +1,7 @@
 import './App.css';   
 import Navbar from './Components/Navbar/Navbar.js';  
-import Welcomepage from './components/pages/Welcomepage';
+import CrimePage from './Components/pages/CrimePage';
+import Welcomepage from './Components/pages/welcomepage.js';
 
 
 
@@ -9,10 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/>
       
-      <Welcomepage />
+      <Welcomepage /> */}
       
+      <CrimePage />
     </div>
   );
 }

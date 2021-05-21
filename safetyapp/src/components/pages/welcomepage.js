@@ -1,4 +1,4 @@
-import './Welcomepage.css';
+import './welcomepage.css';
 import React from 'react';
 import { Button } from 'reactstrap';
 
@@ -7,7 +7,7 @@ function Welcomepage() {
     return (
         <div className="container-1">
             <div className="header-logo">
-                <i class="fas fa-peace spin"></i>
+                <i className="fas fa-peace spin icon-size"></i>
                 <span className="logo-text"> SAFETY APP</span>
             </div>
 
