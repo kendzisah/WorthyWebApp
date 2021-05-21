@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 10%
+    gap: 10%;
 }
 
 .Section-Containers{
@@ -64,7 +64,7 @@
     border: 1px solid rgba(85, 85, 85, 0.5);
 }
 
-.Message-Form textarea{
+.Message-Form  textarea{
     display: block;
     background: rgba(56, 56, 56, 0.363);
     color:rgba(255, 255, 255, .75);

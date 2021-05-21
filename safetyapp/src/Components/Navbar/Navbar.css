@@ -7,7 +7,7 @@
     position: relative;
     background: rgba(0, 0, 0, 1);
     /*Width and height are set like this to simulate vertical navbar; might change this to see if we can just rotate the container*/
-    width: 100px;
+    width: 5rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@
 .Items{
     position: absolute;
     top: 15%;
+    right: 10%;
     list-style-type: none;
 }
 
