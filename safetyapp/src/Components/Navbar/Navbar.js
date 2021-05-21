@@ -34,6 +34,7 @@ class Navbar extends Component
 
 <div>{
 /*
+t
 <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
          width=150" height="70">
 Quick things I picked up
