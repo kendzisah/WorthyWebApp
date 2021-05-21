@@ -29,10 +29,13 @@ html{
     font-family: 'Righteous', cursive;
 }
 
+.icon-size{
+    font-size: 7rem;
+}
 
 .spin{
 
-    font-size: 7rem;
+    
     animation: spin 4s infinite linear;
 }
 
