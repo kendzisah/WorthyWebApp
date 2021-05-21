@@ -55,7 +55,7 @@ function footer() {
                     <textarea 
                     type="text"
                     rows="6"
-                    cols="70"
+                    cols="80"
                     />
                 </form>
 
