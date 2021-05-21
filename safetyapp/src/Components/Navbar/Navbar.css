@@ -7,7 +7,7 @@
     position: relative;
     background: rgba(0, 0, 0, 1);
     /*Width and height are set like this to simulate vertical navbar; might change this to see if we can just rotate the container*/
-    width: 100px;
+    width: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
