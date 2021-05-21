@@ -1,4 +1,3 @@
-
 <div>{
 /*
 Quick things I picked up
@@ -8,7 +7,6 @@ Quick things I picked up
 - the title, url, and cname are just variable names 
 - make sure to fill the url links
 - the cname field is for specifying the cname for when we import it into the container check navbar.js for more details
-
 Questions
 - Q: USING ARRAY BRACKETS SO IS THIS HOW WE DO ARRAY IN JS? OR IS THIS JSON?
 - Q: NOT SURE WHAT LANGUAGE THIS IS, JSON? 
@@ -23,19 +21,18 @@ export const MenuItems =
         title: 'Home',
         url: '#',  
         cName: 'nav-links',
-        icon: './Icons/Home.png'
+        icon: 'fas fa-house-user Icons'
     },
     {
         title: 'Search',
         url: '#',
         cName: 'nav-links',
-        icon: "./Icons/Search.png"
+        icon: 'fas fa-search Icons'
     },
     {
         title: 'About',
         url: '#',
         cName: 'nav-links',
-        icon: './Icons/About.png'
+        icon: 'far fa-file-alt Icons'
     }
 ]
-

@@ -2,14 +2,14 @@ import './Navbar.css';
 import React, { Component } from 'react'
 import { MenuItems } from './MenuItem.js'
 
+
 class Navbar extends Component 
 {        
     render() 
     {
         return  (            
             <nav className="NavbarItems">
-                <div>{/*Populating navbar*/}</div>
-                <ul class="Items">
+                <ul className="Items">
                     {   
                         MenuItems.map
                         (
@@ -17,12 +17,8 @@ class Navbar extends Component
                                 return (
                                     <li key={index}>
                                         <a className={item.cName} href={item.url}>
-                                            <img src={item.icon} alt="" width="40" height="40"/> 
-                                            
-                                        </a>
-                                        <div>{/*Needed another 'a' tag to be able to add the title underneath the image; would be better if I can add these to one hyper link with words at bottom*/}</div>
-                                        <a  href={item.url}>
-                                            <h5 className="Links">{item.title}</h5>
+                                            <i className={item.icon}></i>
+                                            <p>{item.title}</p>  
                                         </a>
                                     </li> 
                                 )
@@ -38,6 +34,7 @@ class Navbar extends Component
 
 <div>{
 /*
+t
 <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
          width=150" height="70">
 Quick things I picked up
@@ -57,7 +54,7 @@ Quick things I picked up
 - apparently would have been better to use for each loop instead of .map but oh well
 - Note we are returning li's to ul tags when we are doing the map function
 - every list item needs key so theyll be able to be accessed
-
+- this what i used b4 <i className="icon"><FontAwesomeIcon icon={faHouseUser}> </FontAwesomeIcon></i> 
 Questions: 
 Q: WHATS A RENDER
 Q: HAVE TO RETURN SOMETHING TO RENDER; DONT KNOW WHAT YET
