@@ -11,9 +11,14 @@ function App() {
     <div className="App">
       <Navbar/>
        
-      <div>
-        <CrimePage />
-        <Footer />
+      <div className="page-sizing">
+        <div className="crime">
+          <CrimePage/>
+        </div>
+        <div className="foot">
+          <Footer/>
+        </div>
+        
       </div>
        
     </div>
