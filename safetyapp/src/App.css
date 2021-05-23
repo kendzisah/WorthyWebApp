@@ -1,12 +1,17 @@
 .App{
     display: flex;
     flex-direction: row;
-    
 }
 
 .page-sizing{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-
+    justify-content: flex-end;
 }
+
+.crime{
+    /*This the only way to override justify-content: */
+    margin-bottom: auto;
+}
+
