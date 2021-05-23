@@ -11,6 +11,9 @@
 # production
 /build
 
+#licensing
+/kendo-ui-license.txt
+
 # misc
 .DS_Store
 .env.local
