@@ -1,7 +1,6 @@
 .App{
     display: flex;
     flex-direction: row;
-
 }
 
 .page-sizing{
@@ -15,5 +14,4 @@
     /*This the only way to override justify-content: */
     margin-bottom: auto;
 }
-
 

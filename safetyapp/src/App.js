@@ -10,6 +10,7 @@ function App() {
 
 
   return (
+
     <Router>
       <div className="App">
         <Navbar/>
@@ -40,6 +41,7 @@ function App() {
 
 
         </Switch>
+
       </div>
     </Router>
 
