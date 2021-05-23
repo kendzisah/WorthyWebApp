@@ -3,25 +3,45 @@ import Navbar from './Components/Navbar/Navbar.js';
 import CrimePage from './Components/pages/CrimePage';
 import Welcomepage from './Components/pages/welcomepage.js';
 import Footer from './Components/footer/footer.js';  
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 
 function App() {
 
 
   return (
-    <div className="App">
-      <Navbar/>
-       
-      <div className="page-sizing">
-        <div className="crime">
-          <CrimePage/>
-        </div>
-        <div className="foot">
-          <Footer/>
-        </div>
-        
+    <Router>
+      <div className="App">
+        <Navbar/>
+
+        <Switch>
+          <Route path='/Search'>
+            <div className="page-sizing">
+              <div className="crime">
+                <CrimePage/>
+              </div>
+              <div className="foot">
+                <Footer/>
+              </div>
+            </div>
+          </Route>
+
+          <Route path='/'>
+            <div className="page-sizing">
+              <div className="crime">
+                <Welcomepage/>
+              </div>
+              <div className="foot">
+                <Footer/>
+              </div>
+            </div>
+          </Route>
+
+
+
+        </Switch>
       </div>
-       
-    </div>
+    </Router>
 
   );
 }

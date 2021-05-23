@@ -19,19 +19,19 @@ export const MenuItems =
 [  
     {
         title: 'Home',
-        url: '#',  
+        url: '/',  
         cName: 'nav-links',
         icon: 'fas fa-house-user Icons'
     },
     {
         title: 'Search',
-        url: '#',
+        url: '/Search',
         cName: 'nav-links',
         icon: 'fas fa-search Icons'
     },
     {
         title: 'About',
-        url: '#',
+        url: '/About',
         cName: 'nav-links',
         icon: 'far fa-file-alt Icons'
     }
