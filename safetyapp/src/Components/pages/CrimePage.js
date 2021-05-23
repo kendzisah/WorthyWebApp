@@ -6,6 +6,9 @@ import useGeocoding from '../hooks/useGeocoding';
 import useFetch from '../hooks/useFetch';
 import { Button } from 'reactstrap';
 import Years from '../data/YearData';
+import {
+    Chart
+} from "@progress/kendo-react-charts";
 
 
 function CrimePage() {
