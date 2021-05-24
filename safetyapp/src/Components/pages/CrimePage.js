@@ -3,20 +3,19 @@ import CrimeData from "../data/CrimeData";
 import React from "react";
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
-import { Button } from "reactstrap";
 import Years from "../data/YearData";
 import {
-    Chart,
-    ChartLegend,
-    ChartSeries,
-    ChartSeriesItem,
-    ChartTitle,
-  } from "@progress/kendo-react-charts";
-  import "hammerjs";
+  Chart,
+  ChartLegend,
+  ChartSeries,
+  ChartSeriesItem,
+  ChartTitle,
+} from "@progress/kendo-react-charts";
+import "hammerjs";
 
 function CrimePage() {
   const [location, setLocation] = useState("AL");
-  const [until, setUntil] = useState("");
+  const [until, setUntil] = useState("1986");
 
   const { data, isPending, error } =
     useFetch(
@@ -81,26 +80,28 @@ function CrimePage() {
       )}
 
       {!isDataPending && (
-        <Chart 
-        style={{
-            width: 1800,
-            height: 1000
-        }}>
-            <ChartTitle text={offenseData.title} />
-            <ChartLegend position="bottom" />
-            <ChartSeries>
+        <Chart
+          style={{
+            width: 1850,
+            height: 1000,
+            
+          }}
+        >
+          <ChartTitle text={`${offenseData.title} in ${location} ${until}`} />
+          <ChartLegend position="bottom" />
+          <ChartSeries>
             <ChartSeriesItem
-                type="pie"
-                data={offenseData.data}
-                field="value"
-                categoryField="key"
-                labels={{
+              type="pie"
+              data={offenseData.data}
+              field="value"
+              categoryField="key"
+              labels={{
                 visible: true,
                 content: offenseData.data.key,
-                }}
+              }}
             />
-            </ChartSeries>
-    </Chart>
+          </ChartSeries>
+        </Chart>
       )}
     </div>
   );
