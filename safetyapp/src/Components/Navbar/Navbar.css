@@ -2,7 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+.Nav-Wrapper{
+    position: fixed;
+}
 .NavbarItems{
     position: relative;
     background: rgba(0, 0, 0, 1);

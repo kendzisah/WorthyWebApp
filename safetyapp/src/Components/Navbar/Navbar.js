@@ -8,25 +8,27 @@ class Navbar extends Component
     render() 
     {
         return  (            
-            <nav className="NavbarItems">
-                <ul className="Items">
-                    {   
-                        MenuItems.map
-                        (
-                            (item, index) => {
-                                return (
-                                    <li key={index}>
-                                        <a className={item.cName} href={item.url}>
-                                            <i className={item.icon}></i>
-                                            <p>{item.title}</p>  
-                                        </a>
-                                    </li> 
-                                )
-                            }
-                        )
-                    } 
-                </ul>
-            </nav>                   
+            <div className='Nav-Wrapper'>
+                <nav className="NavbarItems">
+                    <ul className="Items">
+                        {   
+                            MenuItems.map
+                            (
+                                (item, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <a className={item.cName} href={item.url}>
+                                                <i className={item.icon}></i>
+                                                <p>{item.title}</p>  
+                                            </a>
+                                        </li> 
+                                    )
+                                }
+                            )
+                        } 
+                    </ul>
+                </nav>
+            </div>                   
         )
 
     }
