@@ -36,9 +36,11 @@ function Welcomepage() {
         alt="A city skyline."
         className="skyline-img"
       />
-      <Button className="start-btn" size="lg">
-        START NOW
-      </Button>
+      <a href='/Search'>
+        <Button className="start-btn" size="lg" >
+            START NOW
+        </Button>
+      </a>
     </div>
   );
 }
