@@ -11,15 +11,17 @@ const CrimeData = (stateAbbr, since, until) => {
         isPending
     } = useFetch( `https://api.usa.gov/crime/fbi/sapi/${arrestEndpoint}`) || {};
     
-
     if(!isPending)
     {
-        offenseData = data.data;
+        offenseData = data;
     }
 
+    var isDataPending = isPending;
 
-    console.log(offenseData);
-    return offenseData;
+    return {
+        offenseData,
+        isDataPending
+    };
 }
 
 

@@ -1,9 +1,15 @@
+import '@progress/kendo-theme-default/dist/all.css';
 import './App.css';   
 import Navbar from './Components/Navbar/Navbar.js';  
 import CrimePage from './Components/pages/CrimePage';
 import Welcomepage from './Components/pages/welcomepage.js';
+<<<<<<< HEAD
 import Footer from './Components/footer/footer.js';  
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+=======
+import Footer from './Components/footer/footer.js'; 
+
+>>>>>>> chart
 
 
 function App() {
