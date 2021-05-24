@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
+.Fix-Nav{
+    width: 5rem;
+    height: 100vh;
+}
+
 .Nav-Wrapper{
     position: fixed;
 }
