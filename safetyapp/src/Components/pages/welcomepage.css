@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-html{
-    background-color: #EFF2F1;
-}
 
 .containter-1{
     display: flex;
@@ -58,7 +55,6 @@ html{
 .statement{
     width: 20%;
     color: rgba(255, 255, 255, 0.89);
-    
     
 }
 
