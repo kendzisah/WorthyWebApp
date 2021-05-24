@@ -10,20 +10,20 @@ function footer() {
             <div className="Section-Containers">
                 <h3 className="Footer-Subtitles">COMPANY INFO</h3>
                 <p>
-                    Web agency cofnkdlfn  fdgnl <br></br>
-                    sdfa fdf dfsdadfsdf sa fsdf <br></br>
-                    fsdafasdfds sdfdsafdsff <br></br>
-                    fsafdsafdfasfddfgfdbgsbb <br></br>
+                    Web Agnecy Firm From 2021 to 2021 <br></br>
+                    In cooporation with justice and peace <br></br>
+                    All information is provided by CrimeData.com <br></br>
+                    CopyRight &copy; 2021 SafetyApp | All rights reserved <br></br>
                 </p>
             </div>
 
             <div className="Section-Containers">
                 <h3 className="Footer-Subtitles">CONTACT INFO</h3>
                 <p>
-                <span class="fas fa-map"></span> Web agency cofnkdlfn  fdgnl <br></br>
-                <span class="fas fa-mobile"></span> sdfa fdf dfsdadfsdf sa fsdf <br></br>
-                <span class="fas fa-envelope"></span> fsdafasdfds sdfdsafdsff <br></br>
-                <span class="fas fa-building"></span> fsafdsafdfasfddfgfdbgsbb <br></br>
+                <span class="fas fa-map"></span> 10001 SafetyApp Web Agency St, AZ <br></br>
+                <span class="fas fa-mobile"></span> SafetyApp.org <br></br>
+                <span class="fas fa-envelope"></span> safetyapp_support@safetyapp.com <br></br>
+                <span class="fas fa-building"></span> +1-123-456-7890 <br></br>
                 </p>
             </div>
 

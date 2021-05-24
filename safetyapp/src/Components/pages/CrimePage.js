@@ -27,7 +27,24 @@ function CrimePage() {
 
   const { offenseData, isDataPending } =
     CrimeData(location, until, until) || {};
-  console.log(offenseData);
+  
+  var filteredData = [];
+  if(!isDataPending)
+  {
+    var tempData = offenseData.data;
+
+    filteredData = tempData.filter((item) => {
+      if(item.value === 0)
+      {
+        return false;
+      }
+      else
+      {
+        return true;
+      }
+    })
+  }
+
 
   return (
     <div className="crime-page">
@@ -93,12 +110,12 @@ function CrimePage() {
           <ChartSeries>
             <ChartSeriesItem
               type="pie"
-              data={offenseData.data}
+              data={filteredData}
               field="value"
               categoryField="key"
               labels={{
                 visible: true,
-                content: offenseData.data.key,
+                content: filteredData.key,
               }}
             />
           </ChartSeries>
