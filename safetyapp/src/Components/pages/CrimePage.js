@@ -6,6 +6,7 @@ import useFetch from "../hooks/useFetch";
 import Years from "../data/YearData";
 import {
   Chart,
+  ChartArea,
   ChartLegend,
   ChartSeries,
   ChartSeriesItem,
@@ -15,7 +16,6 @@ import "hammerjs";
 
 function CrimePage() {
   const [location, setLocation] = useState("AL");
-  const [stateName, setStateName] = useState("Alabama");
   const [until, setUntil] = useState("1986");
 
   const { data, isPending, error } =
@@ -48,14 +48,11 @@ function CrimePage() {
             id="state"
             name="state"
             placeholder="Select State"
-            onChange={(e) => {
-              setLocation(e.target.value)
-              setStateName(e.target.id)
-              }}
+            onChange={(e) => setLocation(e.target.value)}
             required
           >
             {data.map((states) => (
-              <option value={states.abbreviation} key={states.abbreviation} id={states.name}>
+              <option value={states.abbreviation} key={states.abbreviation}>
                 {" "}
                 {states.name}{" "}
               </option>
@@ -88,11 +85,11 @@ function CrimePage() {
           style={{
             width: 1850,
             height: 1000,
-            background: "green",
           }}
         >
-          <ChartTitle text={`${offenseData.title} in ${stateName} ${until}`} />
-          <ChartLegend position="bottom" />
+          <ChartArea background="#eee" margin={30} />
+          <ChartTitle text={`${offenseData.title} in ${location} ${until}`} />
+          <ChartLegend position="left" background="#eee"/>
           <ChartSeries>
             <ChartSeriesItem
               type="pie"
